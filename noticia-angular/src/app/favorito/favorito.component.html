@@ -1,0 +1,24 @@
+<h5>Lista de Favoritos</h5>
+
+<a routerLink="/noticia">Ir a Lista de Noticias</a>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">titulo</th>
+      <th scope="col">descripcion</th>
+      <th scope="col">resumen</th>
+      <th scope="col">fecha</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let noticia of noticias">
+      <th scope="row">{{noticia.id}}</th>
+      <td>{{noticia.titulo}}</td>
+      <td>{{noticia.descripcion}}</td>
+      <td>{{noticia.resumen}}</td>
+      <td>{{noticia.fecha}}</td>
+    </tr>
+
+  </tbody>
+</table>
